@@ -28,8 +28,8 @@ pipeline {
             }
             steps {
                 echo 'Building Typescript..'
-                dir('DotnetTemplate.Web'){
-                    sh 'pwd'
+                dir("DotnetTemplate.Web"){
+                    sh "pwd"
                 }
                 echo '$pwd'
                 sh 'npm install'
