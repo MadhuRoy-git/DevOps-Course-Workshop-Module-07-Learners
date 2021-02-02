@@ -22,9 +22,16 @@ pipeline {
                 sh 'dotnet test'
             }
         }
-        stage('Deploy') {
+        stage('Build Typescript') {
+            agent {
+                docker { image 'node:14-alpine' }
+            }
             steps {
-                echo 'Deploying....'
+                echo 'Building Typescript..'
+                sh 'npm install'
+                sh 'npm run build'
+                sh 'npm run lint'
+                sh 'npm t'
             }
         }
     }
