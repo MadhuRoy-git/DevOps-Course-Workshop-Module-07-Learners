@@ -28,7 +28,7 @@ pipeline {
             }
             steps {
                 echo 'Building Typescript..'
-                dir('${env.WORKSPACE}/DotnetTemplate.Web'){
+                dir('DotnetTemplate.Web'){
                     sh 'pwd'
                 }
                 echo '$pwd'
