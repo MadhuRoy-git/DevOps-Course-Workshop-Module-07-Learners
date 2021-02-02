@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             agent {
-                docker { image 'mcr.microsoft.com/dotnet/sdk:3.1' }
+                docker { image 'mcr.microsoft.com/dotnet/sdk:5.0' }
             }
             steps {
                 echo 'Building..'
@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Test') {
             agent {
-                docker { image 'mcr.microsoft.com/dotnet/sdk:3.1' }
+                docker { image 'mcr.microsoft.com/dotnet/sdk:5.0' }
             }
             steps {
                 echo 'Testing..'
