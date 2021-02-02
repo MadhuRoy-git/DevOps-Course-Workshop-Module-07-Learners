@@ -18,7 +18,7 @@ jobs:
       run: |
        dotnet build
        dotnet test
-       cd DotnetTemplate.web
+       cd ./DotnetTemplate.web
        npm run build
        npm run lint
        npm t
