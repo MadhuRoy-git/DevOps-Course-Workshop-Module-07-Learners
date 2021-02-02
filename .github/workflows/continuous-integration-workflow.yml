@@ -19,6 +19,7 @@ jobs:
        dotnet build
        dotnet test
        cd DotnetTemplate.Web
+       npm install
        npm run build
        npm run lint
        npm t
