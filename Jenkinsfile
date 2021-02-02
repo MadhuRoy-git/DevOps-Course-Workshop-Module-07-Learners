@@ -7,7 +7,7 @@ pipeline {
             }
             steps {
                 echo 'Building..'
-                dotnet build
+                sh 'dotnet build'
             }
         }
         stage('Test') {
@@ -16,7 +16,7 @@ pipeline {
             }
             steps {
                 echo 'Testing..'
-                dotnet test
+                sh 'dotnet test'
             }
         }
         stage('Deploy') {
