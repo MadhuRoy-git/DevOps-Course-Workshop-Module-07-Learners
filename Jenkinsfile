@@ -28,6 +28,7 @@ pipeline {
             }
             steps {
                 echo 'Building Typescript..'
+                sh 'cd DotnetTemplate.Web'
                 sh 'npm install'
                 sh 'npm run build'
                 sh 'npm run lint'
