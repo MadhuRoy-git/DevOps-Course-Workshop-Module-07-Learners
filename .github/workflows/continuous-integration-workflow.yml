@@ -19,7 +19,7 @@ jobs:
        dotnet build
        dotnet test
     - name: Typescript code
-      working-directory: ./../DevOps-Course-Workshop-Module-07-Learners/DotnetTemplate.web
+      working-directory: ./DotnetTemplate.web
       run: |
        npm run build
        npm run lint
