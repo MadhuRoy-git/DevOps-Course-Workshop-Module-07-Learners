@@ -10,5 +10,4 @@ WORKDIR /DevOps-Course-Workshop-Module-07-Learners/DotnetTemplate.Web
 RUN npm install
 
 RUN npm run build
-WORKDIR /DevOps-Course-Workshop-Module-07-Learners
 ENTRYPOINT dotnet run
