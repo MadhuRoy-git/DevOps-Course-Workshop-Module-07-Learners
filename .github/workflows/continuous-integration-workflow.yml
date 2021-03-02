@@ -23,4 +23,8 @@ jobs:
        npm run build
        npm run lint
        npm t
+       docker build —tag madhuaxp/dotnettemplate
+       docker push madhuaxp/dotnettemplate
+
+       
     
