@@ -25,6 +25,7 @@ jobs:
        npm t
        cd ..
        docker build --tag madhuaxp/dotnettemplate .
+       docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
        docker push madhuaxp/dotnettemplate
 
        
